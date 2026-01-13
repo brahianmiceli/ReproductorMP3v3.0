@@ -6,30 +6,57 @@ Un reproductor de música MP3 de alto rendimiento desarrollado en **Java**, con 
 
 ## 🚀 Características Principales
 
-* **🎨 Interfaz Moderna:** Diseño "Dark Mode" con acentos neón, construido íntegramente sobre **Java Swing**.
+* **🎨 Interfaz Moderna:** Diseño "Dark Mode" con acentos neón, construido íntegramente sobre **Java Swing** con componentes personalizados.
 * **📊 Visualizador Animado:** Sistema de barras de espectro simulado que proporciona feedback visual en tiempo real.
-* **⏸️ Control de Pausa Inteligente:** Implementación de *byte-skipping* para reanudar canciones con precisión.
-* **⚙️ Controles Avanzados:** Incluye modo aleatorio (**Shuffle**) y control de volumen logarítmico.
+* **⏸️ Control de Pausa Inteligente:** Implementación de *byte-skipping* técnico para reanudar canciones exactamente en el milisegundo donde se detuvieron.
+* **📂 Gestión de Listas:** Soporte para importación múltiple de archivos MP3 y navegación intuitiva entre pistas.
+* **⚙️ Controles Avanzados:** Incluye modo aleatorio (**Shuffle**), control de volumen logarítmico profesional y salto automático al finalizar la pista.
+
+---
+
+## 🛠️ Stack Tecnológico
+
+* **Lenguaje:** Java SE (JDK 8+)
+* **Librerías:** [JLayer (Javazoom)](http://www.javazoom.net/javalayer/javalayer.html) para decodificación de MP3.
+* **Gráficos:** Java Swing & AWT para el renderizado de la GUI y animaciones.
+* **Arquitectura:** Multithreading (Concurrencia) para la separación de procesos de audio e interfaz.
+
+---
+
+## 📂 Estructura del Proyecto
+
+El código sigue el principio de separación de responsabilidades en tres clases principales:
+
+1.  **`Cancion.java`**: Modelo de datos que encapsula los metadatos y rutas de los archivos de audio.
+2.  **`ReproductorMP3.java`**: Motor lógico que gestiona los `InputStreams`, la decodificación y el hardware de salida.
+3.  **`ReproductorGUI.java`**: Capa visual que orquestra los eventos de usuario y el renderizado del visualizador.
 
 ---
 
 ## ⚙️ Instalación y Ejecución
 
-1. **Requisitos:** Tener instalado Java (JRE 8 o superior).
-2. **Uso:** Localiza el archivo `ReproductorMP3.jar` en la carpeta `out/artifacts/` y ejecútalo con doble clic.
-3. **Desarrollo:** Ejecuta la clase **`Main.java`** desde tu IDE preferido.
+### 🖥️ Para Usuarios finales (Windows)
+1. Descarga el archivo ejecutable **`Reproductor MP3 v3.0 by Brahian Miceli.exe`**.
+2. Haz doble clic para iniciar la aplicación (No requiere abrir un IDE).
+3. Utiliza el botón **➕** para cargar archivos MP3 y comenzar la reproducción.
+
+### 💻 Para Desarrolladores
+1. Clona el repositorio e impórtalo en IntelliJ IDEA o Eclipse.
+2. Asegúrate de incluir la librería **`jl1.0.1.jar`** en el classpath.
+3. Ejecuta la clase **`Main.java`**.
 
 ---
 
 ## 🧠 Conceptos Aprendidos
 
-Durante el desarrollo de este proyecto se aplicaron conceptos avanzados de ingeniería de software:
+Durante el desarrollo de este software se aplicaron y consolidaron conceptos avanzados de ingeniería:
 
-* **🛠️ Manipulación de Streams:** Implementación de lectura de archivos binarios y manejo técnico de `FileInputStream` para el procesamiento de datos de audio.
-* **🧵 Programación Concurrente:** Uso estratégico de `Threads` para ejecutar procesos paralelos, garantizando que la reproducción de audio no bloquee la interfaz gráfica.
-* **📐 Matemáticas Aplicadas:** Conversión de escalas lineales a logarítmicas (Decibelios) para lograr un control de volumen profesional.
-* **🎨 UX/UI en Desktop:** Mejora de la experiencia de usuario mediante el diseño de componentes personalizados, eventos de ratón (`Hover`) y paletas de colores coherentes.
+* **🛠️ Manipulación de Streams:** Implementación técnica de lectura de archivos binarios mediante `FileInputStream` y gestión de saltos de bytes para el control de la posición de reproducción.
+* **🧵 Programación Concurrente (Multithreading):** Uso estratégico de la clase `Thread` para separar el proceso de audio del hilo de eventos de la interfaz (EDT), manteniendo la fluidez de la GUI.
+* **📐 Matemáticas Aplicadas:** Implementación de algoritmos logarítmicos para convertir señales lineales en niveles de Decibelios ($dB$) naturales al oído humano.
+* **📦 Distribución y Packaging:** Generación de artefactos `.jar` y creación de envoltorios nativos (`Wrappers`) `.exe` mediante **Launch4j**, configurando requisitos mínimos de JRE para entornos de producción.
+* **🎨 UX/UI en Desktop:** Diseño de experiencia de usuario mediante *event listeners* complejos y renderizado personalizado para lograr una estética moderna coherente.
 
 ---
 
-### Desarrollado con ❤️ por Brahian
+### Desarrollado con ❤️ por **Brahian**
