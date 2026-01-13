@@ -35,3 +35,17 @@ El proyecto se divide en tres clases clave para mantener la separación de respo
 2. **Clonación:**
    ```bash
    git clone [https://github.com/tu-usuario/reproductor-neon-java.git](https://github.com/tu-usuario/reproductor-neon-java.git)
+
+## 🧠 Conceptos Aprendidos
+* Durante el desarrollo de este proyecto se aplicaron conceptos avanzados de ingeniería de software:
+
+* Manipulación de Streams: Implementación de lectura de archivos binarios y manejo técnico de FileInputStream para el procesamiento de datos de audio.
+
+* Programación Concurrente: Uso estratégico de Threads para ejecutar procesos paralelos, garantizando que la reproducción de audio no interfiera con la fluidez de la interfaz.
+
+* Matemáticas Aplicadas: Implementación de algoritmos para la conversión de escalas lineales a logarítmicas (Decibelios) para lograr un control de volumen profesional.
+
+* UX/UI en Desktop: Mejora de la experiencia de usuario mediante el diseño de componentes personalizados, manejo de eventos de ratón (Hover) y una paleta de colores coherente para entornos oscuros.
+
+
+## Desarrollado con ❤️ por Brahian
