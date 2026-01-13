@@ -1,47 +1,35 @@
-# 🎵 Reproductor MP3 v3.0
+# 🎵 Java Neon Music Player v3.0
 
-Un reproductor de música MP3 moderno desarrollado en **Java**, enfocado en una estética **Neon-Dark** y una arquitectura de hilos robusta para una reproducción fluida.
+Un reproductor de música MP3 de alto rendimiento desarrollado en **Java**, con una estética **Neon-Dark** y una arquitectura de hilos robusta diseñada para una experiencia de usuario fluida y moderna.
 
+---
 
+## 🚀 Características Principales
 
-## 🚀 Características principales
+* **🎨 Interfaz Moderna:** Diseño "Dark Mode" con acentos neón, construido íntegramente sobre **Java Swing**.
+* **📊 Visualizador Animado:** Sistema de barras de espectro simulado que proporciona feedback visual en tiempo real.
+* **⏸️ Control de Pausa Inteligente:** Implementación de *byte-skipping* para reanudar canciones con precisión.
+* **⚙️ Controles Avanzados:** Incluye modo aleatorio (**Shuffle**) y control de volumen logarítmico.
 
-* **Interfaz Moderna:** Diseño "Dark Mode" con acentos neón desarrollado puramente en Java Swing.
-* **Visualizador Animado:** Sistema de barras de espectro simulado que reacciona mientras la música suena.
-* **Control de Pausa Inteligente:** Capacidad de pausar y reanudar canciones exactamente en el mismo segundo mediante el cálculo de *byte-skipping*.
-* **Gestión de Listas:** Importación múltiple de archivos MP3 y navegación intuitiva.
-* **Controles Avanzados:** Incluye modo aleatorio (Shuffle), control de volumen logarítmico y salto automático de pista.
+---
 
-## 🛠️ Tecnologías Utilizadas
+## ⚙️ Instalación y Ejecución
 
-* **Java SE:** Lenguaje principal.
-* **JLayer (Javazoom):** Para la decodificación y procesamiento de archivos MP3.
-* **Java Swing & AWT:** Para la creación de la interfaz gráfica y el renderizado del visualizador.
-* **Multithreading:** Uso de hilos independientes para audio e interfaz, evitando que la ventana se bloquee.
+1. **Requisitos:** Tener instalado Java (JRE 8 o superior).
+2. **Uso:** Localiza el archivo `ReproductorMP3.jar` en la carpeta `out/artifacts/` y ejecútalo con doble clic.
+3. **Desarrollo:** Ejecuta la clase **`Main.java`** desde tu IDE preferido.
 
-## 📂 Estructura del Código
-
-El proyecto se divide en tres clases clave para mantener la separación de responsabilidades:
-
-1.  **`Cancion.java`**: Modelo de datos que gestiona la información de los archivos de audio.
-2.  **`ReproductorMP3.java`**: El motor lógico. Gestiona los `InputStreams`, el volumen del sistema y la decodificación de audio.
-3.  **`ReproductorGUI.java`**: La capa visual. Gestiona los eventos de usuario, el dibujo del visualizador y las actualizaciones en tiempo real.
-
-## ⚙️ Instalación y Uso
-
-1. **Requisitos:** Tener instalado el JDK 8 o superior y la librería `jl1.0.1.jar` (JLayer).
-2. **Clonación:**
-   ```bash
-   git clone [https://github.com/tu-usuario/reproductor-neon-java.git](https://github.com/tu-usuario/reproductor-neon-java.git)
+---
 
 ## 🧠 Conceptos Aprendidos
 
-* **Manipulación de Streams:** Implementación de lectura de archivos binarios y manejo técnico de FileInputStream para el procesamiento de datos de audio.
+Durante el desarrollo de este proyecto se aplicaron conceptos avanzados de ingeniería de software:
 
-* **Programación Concurrente:** Uso estratégico de Threads para ejecutar procesos paralelos, garantizando que la reproducción de audio no interfiera con la fluidez de la interfaz.
+* **🛠️ Manipulación de Streams:** Implementación de lectura de archivos binarios y manejo técnico de `FileInputStream` para el procesamiento de datos de audio.
+* **🧵 Programación Concurrente:** Uso estratégico de `Threads` para ejecutar procesos paralelos, garantizando que la reproducción de audio no bloquee la interfaz gráfica.
+* **📐 Matemáticas Aplicadas:** Conversión de escalas lineales a logarítmicas (Decibelios) para lograr un control de volumen profesional.
+* **🎨 UX/UI en Desktop:** Mejora de la experiencia de usuario mediante el diseño de componentes personalizados, eventos de ratón (`Hover`) y paletas de colores coherentes.
 
-* **Matemáticas Aplicadas:** Implementación de algoritmos para la conversión de escalas lineales a logarítmicas (Decibelios) para lograr un control de volumen profesional.
+---
 
-* **UX/UI en Desktop:** Mejora de la experiencia de usuario mediante el diseño de componentes personalizados, manejo de eventos de ratón (Hover) y una paleta de colores coherente para entornos oscuros.
-
-# Desarrollado con ❤️ por Brahian
+### Desarrollado con ❤️ por Brahian
