@@ -35,7 +35,6 @@ El proyecto se divide en tres clases clave para mantener la separación de respo
    git clone [https://github.com/tu-usuario/reproductor-neon-java.git](https://github.com/tu-usuario/reproductor-neon-java.git)
 
 ## 🧠 Conceptos Aprendidos
-* Durante el desarrollo de este proyecto se aplicaron conceptos avanzados de ingeniería de software:
 
 * **Manipulación de Streams:** Implementación de lectura de archivos binarios y manejo técnico de FileInputStream para el procesamiento de datos de audio.
 
