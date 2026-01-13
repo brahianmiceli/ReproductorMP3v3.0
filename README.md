@@ -1,4 +1,4 @@
-# 🎵 Java Neon Music Player v3.0
+# 🎵 Reproductor MP3 v3.0
 
 Un reproductor de música MP3 de alto rendimiento desarrollado en **Java**, con una estética **Neon-Dark** y una arquitectura de hilos robusta diseñada para una experiencia de usuario fluida y moderna.
 
