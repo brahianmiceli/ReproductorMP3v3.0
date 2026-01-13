@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ReproductorMP3:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ReproductorMP3_jar</output-path>
+    <root id="archive" name="ReproductorMP3.jar">
+      <element id="module-output" name="ReproductorMP3" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javazoom/jlayer/1.0.1/jlayer-1.0.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
