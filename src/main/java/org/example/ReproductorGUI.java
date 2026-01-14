@@ -29,7 +29,7 @@ public class ReproductorGUI {
     }
 
     private void inicializarInterfaz() { // Crea todos los botones y paneles
-        frame = new JFrame("Reproductor MP3 v2.3"); // Crea la ventana con titulo
+        frame = new JFrame("Reproductor MP3 v3.0"); // Crea la ventana con titulo
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Cierra el programa al salir
         frame.setSize(600, 600); // Define tamaño 600x600 pixels
         frame.getContentPane().setBackground(colorFondo); // Pone el fondo oscuro
