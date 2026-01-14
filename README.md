@@ -59,4 +59,7 @@ Durante el desarrollo de este software se aplicaron y consolidaron conceptos ava
 
 ---
 
+<img width="586" height="585" alt="image" src="https://github.com/user-attachments/assets/a9c25dd8-5cc2-4c9e-9a64-d5750440aff3" />
+
+
 ### Desarrollado con ❤️ por **Brahian**
